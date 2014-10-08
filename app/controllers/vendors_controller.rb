@@ -3,6 +3,13 @@ class VendorsController < ApplicationController
   def index
     @vendors = Vendor.all
 
+
+  end
+
+  def old
+    @vendor = Vendor.find_by(name: params[:name]) # populate specific info for instance of old vendor
+    # raise params.inspect
+
   end
 
   def new
@@ -14,7 +21,7 @@ class VendorsController < ApplicationController
     if @vendor.save
       redirect_to root_path
     else
-      render :new
+      # render :new
     end
 
   end

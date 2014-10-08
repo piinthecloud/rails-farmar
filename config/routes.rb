@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
   get "/vendors",     to: "vendors#index"
   get "/vendors/new", to: "vendors#new"
-  post "/vendors",    to: "vendors#create"
+  get "/vendors/old", to: "vendors#old"
+
+
+  post "/vendors/old",  to: "vendors#old"
+  post "/vendors",      to: "vendors#create"
+
   root "vendors#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
