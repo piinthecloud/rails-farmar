@@ -12,17 +12,18 @@
       <p>Name</p>
       <p>Market ID</p>
       <p>Location</p>
+      <p>&nbsp;</p>
     </div>
 
-    <div class = "field_input"><form action="/vendors" method="POST">
-      <p><input type="text" name=vendor[name] value= "<%= @vendor.name %>" /></p>
-      <p><input type="text" name=vendor[market_id] value= "<%= @vendor.market_id %>"/></p>
-      <p><input type="text" name=vendor[location] value= "<%= @vendor.location %>" /></p>
+    <div class = "field_input">
+      <form action="/vendors" method="POST">
+        <p><input type="text" name=vendor[name] value= "<%= @vendor.name %>" /></p>
+        <p><input type="text" name=vendor[market_id] value= "<%= @vendor.market_id %>"/></p>
+        <p><input type="text" name=vendor[location] value= "<%= @vendor.location %>" /></p>
 
-    <p><input type="submit"/></p>
-    </form>
+        <div><input type="submit"/></p></div>
+      </form>
 
-    </div>
   </div>
 
   <a class = "home-button" href = "/">Home</a>
