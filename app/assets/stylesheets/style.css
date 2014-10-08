@@ -1,3 +1,7 @@
+*{
+	border: 1px solid pink;
+}
+
 html{
 	margin: 0;
 	padding: 0;
@@ -10,21 +14,19 @@ body{
     margin: 10px;
     padding:0;
 		padding-bottom: 40px;
-		margin-bottom: 20px;
+		margin-bottom: 0px;
 		min-height: 900px;
 }
 
 
-
-.index h2{
-
-  color: green;
-  text-align: center;
-
+.index {
+  margin-top: 0;
 }
 
-.index img{
-
-
-
+.index h2{
+  margin: 0;
+  color: #4B7F50;
+  text-align: center;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-size: 5.3em;
 }

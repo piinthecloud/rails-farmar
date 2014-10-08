@@ -8,7 +8,7 @@
 
 
 <% @vendors.each do |vendor| %>
-  <h3><%= vendor.name %></h3>
+  <h4><%= vendor.name.upcase %></h4>
   <%= vendor.market_id %>
   <%= vendor.location %>
 <% end %>
