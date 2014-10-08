@@ -19,6 +19,7 @@ body{
 }
 
 
+
 .index {
   margin-top: 0;
 }
@@ -28,5 +29,5 @@ body{
   color: #4B7F50;
   text-align: center;
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-  font-size: 5.3em;
+  font-size: 5em;
 }
