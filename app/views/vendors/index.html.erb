@@ -1,38 +1,24 @@
 <div class=index>
 
+  <h2>Welcome</h2>
 
-<h2>Welcome</h2>
+  <p><%= link_to "New vendor", "/vendors/new" %></p>
 
+  <div class = "field_input">
 
-<p><%= link_to "New vendor", "/vendors/new" %></p>
+    <form action="/vendors/old" method="POST">
+      <p>Vendor Name<input type="text" name="name"/></p>
+      <p><input type="submit"/></p>
+    </form>
 
-
-<!-- if vendor == old vendor
-        action ="/oldvendor"
-     else
-        action ="/vendors"
-      end
-        -->
-<div class = "field_input">
-
-  <form action="/vendors/old" method="POST">
-
-  <p>Vendor Name<input type="text" name="name"/></p>
+  </div>
 
 
 
-
-    <p><input type="submit"/></p>
-  </form>
-
-</div>
-
-
-
-<% @vendors.each do |vendor| %>
-  <h4><%= vendor.name.upcase %></h4>
-  <%= vendor.market_id %>
-  <%= vendor.location %>
-<% end %>
+  <% @vendors.each do |vendor| %>
+    <h4><%= vendor.name.upcase %></h4>
+    <%= vendor.market_id %>
+    <%= vendor.location %>
+  <% end %>
 
 </div>
