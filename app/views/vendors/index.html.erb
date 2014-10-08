@@ -1,10 +1,16 @@
-<h2>Welcome, Vendors</h2>
+<div class=index>
+
+
+<h2>Welcome</h2>
+
+
+<p><%= link_to "New vendor", "/vendors/new" %></p>
+
 
 <% @vendors.each do |vendor| %>
-  <h3><%= vendor.name %></h3>
+  <h4><%= vendor.name.upcase %></h4>
   <%= vendor.market_id %>
   <%= vendor.location %>
 <% end %>
 
-
-<p><%= link_to "New vendor", "/vendors/new" %></p>
+</div>
