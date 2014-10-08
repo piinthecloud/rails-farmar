@@ -1,5 +1,30 @@
-body {
+html{
+	margin: 0;
+	padding: 0;
+	}*
 
-  background-color: red;
+body{
+    font-family: arial, helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    margin: 10px;
+    padding:0;
+		padding-bottom: 40px;
+		margin-bottom: 20px;
+		min-height: 900px;
+}
+
+
+
+.index h2{
+
+  color: green;
+  text-align: center;
+
+}
+
+.index img{
+
+
 
 }
