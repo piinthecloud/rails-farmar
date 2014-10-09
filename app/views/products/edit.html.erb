@@ -1,0 +1,13 @@
+<h2> EDIT PRODUCTS PAGE</h2>
+
+<div class = "field_input">
+  <form action="/products/<%= @product.id %>" method="POST">
+    <input type="hidden" name="_method" value="PUT"/>
+    <p><input type="text" name=product[product_name] value= "<%= @product.product_name %>" /></p>
+    <p><input type="text" name=product[vendor_id] value= "<%= @product.vendor_id %>"/></p>
+    <p><input type="text" name=product[number_of_sales] value= "<%= @product.number_of_sales %>" /></p>
+
+    <div><input type="submit"/></p></div>
+  </form>
+
+</div>

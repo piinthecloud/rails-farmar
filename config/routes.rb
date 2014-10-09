@@ -1,14 +1,26 @@
 Rails.application.routes.draw do
-  get "/vendors",     to: "vendors#index"
-  get "/vendors/new", to: "vendors#new"
-  get "/vendors/old", to: "vendors#old"
+
+  get '/products/new',      to: "products#new"
+  post '/products',         to: "products#create"
+  get "/products",          to: "products#index"
+  get "/products/:id/edit", to: "products#edit", as: :edit_product
+  put "/products/:id",      to: "products#update"
+
+
+
+###############################################################
+
+  get "/vendors",           to: "vendors#index"
+  get "/vendors/new",       to: "vendors#new"
+  get "/vendors/old",       to: "vendors#old"
+  post "/vendors/old",      to: "vendors#old"
+
 
   get  "/vendors/:id/edit", to: "vendors#edit", as: :edit_vendor
+  put "/vendors/:id",       to: "vendors#update", as: :vendor
+  post "/vendors",          to: "vendors#create"
 
-  put "/vendors/:id", to: "vendors#update", as: :vendor
 
-  post "/vendors/old",  to: "vendors#old"
-  post "/vendors",      to: "vendors#create"
 
   root "vendors#index"
 
