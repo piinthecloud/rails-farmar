@@ -1,3 +1,88 @@
+html {
+  margin: 0;
+  padding: 0;
+  }
+
+body{
+    color: black;
+    margin: 10px;
+    padding:0;
+    padding-bottom: 40px;
+    min-height: 900px;
+}
+
+.field_labels {
+  display: inline-block;
+}
+
+.field_input {
+  display: inline-block;
+
+}
+
+.new-vendor {
+  background-color: #E2FFE4;
+  font-family: georgia;
+}
+
+.new-vendor p {
+  margin: 0;
+  padding: 5px;
+}
+
+.new-vendor .page-header {
+  background-color: #4B7F50;
+  color: white;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin: 0;
+
+}
+
+.new-vendor .fields {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  background-color: #77CC7F;
+}
+
+.new-vendor .field-label {
+  font-size: 14pt;
+  width: 8%;
+  display: inline-block;
+}
+
+.new-vendor h4 {
+  font-size: 16pt;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+.new-vendor .field-area {
+  display: inline-block;
+}
+
+.new-vendor .home-button {
+  padding: 10px;
+  display: block;
+}
+
+.index {
+  margin-top: 0;
+  font-family: georgia;
+}
+
+.index h2{
+  font-size: 16pt;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+
+}
 
 
 /*
