@@ -1,0 +1,13 @@
+<h2> EDIT PAGE</h2>
+
+<div class = "field_input">
+  <form action="/vendors/<%= @vendor.id %>" method="POST">
+    <input type="hidden" name="_method" value="PUT"/>
+    <p><input type="text" name=vendor[name] value= "<%= @vendor.name %>" /></p>
+    <p><input type="text" name=vendor[market_id] value= "<%= @vendor.market_id %>"/></p>
+    <p><input type="text" name=vendor[location] value= "<%= @vendor.location %>" /></p>
+
+    <div><input type="submit"/></p></div>
+  </form>
+
+</div>

@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   get "/vendors/new", to: "vendors#new"
   get "/vendors/old", to: "vendors#old"
 
+  get  "/vendors/:id/edit", to: "vendors#edit", as: :edit_vendor
+
+  put "/vendors/:id", to: "vendors#update", as: :vendor
 
   post "/vendors/old",  to: "vendors#old"
   post "/vendors",      to: "vendors#create"
