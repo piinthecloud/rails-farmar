@@ -1,4 +1,12 @@
 <h2> OLD VENDOR </h2>
 
-<%= params.inspect %>
-<%= @vendor.inspect %>
+<div>
+
+<h4><%= @vendor.name.upcase %></h4>
+<p>VENDOR: <%= @vendor.id %> </p>
+<p>MARKET ID: <%= @vendor.market_id %></p>
+<p>LOCATION: <%= @vendor.location %></p>
+
+<%= link_to "Edit", edit_vendor_path(@vendor.id) %>
+
+</div>
