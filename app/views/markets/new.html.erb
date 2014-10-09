@@ -1,0 +1,30 @@
+
+<div class = "new-vendor">
+
+  <div class = "page-header">
+    <h2> New Market Registration</h2>
+  </div>
+
+
+  <h4>Please enter your product information, then click "create": </h4>
+
+  <div class = "fields">
+    <div class ="field_labels">
+      <p>Name</p>
+      <p>Location</p>
+      <p>&nbsp;</p>
+    </div>
+
+    <div class = "field_input">
+      <form action="/markets" method="POST">
+        <p><input type="text" name=market[name] value= "<%= @market.name %>" /></p>
+        <p><input type="text" name=market[location] value= "<%= @market.location %>"/></p>
+
+        <div><input type="submit"/></p></div>
+      </form>
+
+  </div>
+
+  <a class = "home-button" href = "/">Home</a>
+
+</div>

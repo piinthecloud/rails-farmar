@@ -1,5 +1,18 @@
 Rails.application.routes.draw do
 
+  get '/markets',           to: "markets#index"
+  get '/markets/new',       to: "markets#new"
+  post 'markets',           to: "markets#create"
+
+  get 'markets/create'
+
+  get 'markets/update'
+
+  get 'markets/:id/edit',   to: "markets#edit", as: :edit_market
+  put 'markets/:id',        to: "markets#update"
+
+###############################################################
+
   get '/products/new',      to: "products#new"
   post '/products',         to: "products#create"
   get "/products",          to: "products#index"

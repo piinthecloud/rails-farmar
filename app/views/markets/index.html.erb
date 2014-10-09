@@ -1,0 +1,11 @@
+<h1>Markets Landing Page</h1>
+
+<p><%= link_to "New markets", "/markets/new" %></p>
+
+
+  <% @markets.each do |market| %>
+    <h4><%= market.name.upcase %></h4>
+    <%= market.location %>
+    <%= link_to "edit", edit_market_path(market.id) %>
+
+  <% end %>
