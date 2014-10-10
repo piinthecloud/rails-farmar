@@ -3,6 +3,10 @@ class MarketsController < ApplicationController
     @market = Market.new
   end
 
+  def show
+    @market = Market.find(params[:id])
+  end
+
   def index
     @markets = Market.all
   end
@@ -21,8 +25,13 @@ class MarketsController < ApplicationController
       redirect_to "/markets"
     else
     end
+  end
 
-
+  def destroy
+    @market = Market.find(params[:id])
+    if @market.destroy
+      redirect_to root_path
+    end
   end
 
   def edit

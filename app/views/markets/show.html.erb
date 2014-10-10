@@ -1,0 +1,4 @@
+<h4><%= @market.name.upcase %></h4>
+<%= @market.location %>
+<%= link_to "edit", edit_market_path(@market.id) %>
+<%= link_to "delete", @market, method: :delete %>

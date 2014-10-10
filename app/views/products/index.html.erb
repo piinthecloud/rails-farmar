@@ -5,11 +5,8 @@
 <p><%= link_to "New products", "/products/new" %></p>
 
   <% @products.each do |product| %>
-    <h4><%= product.product_name.upcase %></h4>
+    <h4><%= link_to product.product_name.upcase, product_path(product.id) %></h4>
     <%= product.vendor_id %>
     <%= product.number_of_sales %>
-    <%= link_to "edit", edit_product_path(product.id) %>
-    <%= link_to "delete", @product, method: :delete %>
-
 
   <% end %>

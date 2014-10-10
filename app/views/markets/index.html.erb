@@ -4,8 +4,8 @@
 
 
   <% @markets.each do |market| %>
-    <h4><%= market.name.upcase %></h4>
+    <h4><%= link_to market.name.upcase, market_path(market.id)%></h4>
     <%= market.location %>
-    <%= link_to "edit", edit_market_path(market.id) %>
+
 
   <% end %>

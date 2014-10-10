@@ -1,0 +1,5 @@
+<h4><%= @product.product_name.upcase %></h4>
+<%= @product.vendor_id %>
+<%= @product.number_of_sales %>
+<%= link_to "edit", edit_product_path(@product.id) %>
+<%= link_to "delete", @product, method: :delete %>

@@ -11,6 +11,10 @@ class ProductsController < ApplicationController
 
   end
 
+  def show
+    @product = Product.find(params[:id])
+  end
+
   def create
     @product = Product.new(post_params)
     if @product.save
@@ -33,7 +37,7 @@ class ProductsController < ApplicationController
   end
 
   def destroy
-    
+
     @product = Product.find(params[:id])
     if @product.destroy
       redirect_to "/products"

@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   get 'markets/:id/edit',   to: "markets#edit", as: :edit_market
   put 'markets/:id',        to: "markets#update"
 
+  get 'markets/:id',        to: "markets#show", as: :market
+  delete "markets/:id",     to: "markets#destroy", as: :delete_market
+
 ###############################################################
 
   get '/products/new',      to: "products#new"
@@ -18,7 +21,8 @@ Rails.application.routes.draw do
   get "/products",          to: "products#index"
   get "/products/:id/edit", to: "products#edit", as: :edit_product
   put "/products/:id",      to: "products#update"
-  delete "/products/",      to: "products#destroy", as: :delete_product
+  delete "/products/:id",   to: "products#destroy", as: :delete_product
+  get "/products/:id",      to: "products#show", as: :product
 
 
 ###############################################################
