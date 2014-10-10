@@ -52,6 +52,12 @@ class VendorsController < ApplicationController
     end
   end
 
+  def destroy
+    find_method
+    if @vendor.destroy
+      redirect_to root_path
+    end
+  end
 
 
   private

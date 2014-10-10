@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   get "/products",          to: "products#index"
   get "/products/:id/edit", to: "products#edit", as: :edit_product
   put "/products/:id",      to: "products#update"
-
+  delete "/products/",      to: "products#destroy", as: :delete_product
 
 
 ###############################################################
@@ -33,7 +33,7 @@ Rails.application.routes.draw do
   put "/vendors/:id",       to: "vendors#update", as: :vendor
   post "/vendors",          to: "vendors#create"
 
-
+  delete "/vendors/:id",    to: "vendors#destroy", as: :delete_vendor
 
   root "vendors#index"
 
