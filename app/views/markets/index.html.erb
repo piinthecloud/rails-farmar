@@ -1,7 +1,7 @@
 <h1>Markets Landing Page</h1>
 
 <p><%= link_to "New markets", "/markets/new" %></p>
-
+<a class = "home-button" href = "/">Home</a>
 
   <% @markets.each do |market| %>
     <h4><%= link_to market.name.upcase, market_path(market.id)%></h4>
