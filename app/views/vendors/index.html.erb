@@ -21,8 +21,10 @@
 
   <% @vendors.each do |vendor| %>
     <h4><%= vendor.name.upcase %></h4>
-    <%= vendor.market_id %>
+    Market ID: <%= vendor.market_id %>
+    VendorID: <%= vendor.id %>
     <%= vendor.location %>
+    <%= vendor.products.inspect %>
   <% end %>
 
 </div>

@@ -29,9 +29,9 @@ class VendorsController < ApplicationController
     @vendor = Vendor.new(post_params)
     #session[:id] = @vendor.id
     if @vendor.save
-      session[:id] = @vendor.id
-      session[:name] = @vendor.name
-      raise session.inspect
+      # session[:id] = @vendor.id
+      # session[:name] = @vendor.name
+      # raise session.inspect
       redirect_to root_path
     else
       render :new
